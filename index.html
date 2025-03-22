@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виноградная Лавка - Свежий виноград</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Виноградная Лавка</div>
+            <div class="nav-links">
+                <a href="#home">Главная</a>
+                <a href="#products">Продукты</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Свежий виноград высшего качества</h1>
+                <p>Отборные сорта винограда со всего мира</p>
+                <a href="#products" class="cta-button">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Наши сорта винограда</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d" alt="Красный виноград">
+                    <h3>Красный виноград</h3>
+                    <p>Сладкий и сочный сорт</p>
+                    <p class="price">500 ₽/кг</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d" alt="Зеленый виноград">
+                    <h3>Зеленый виноград</h3>
+                    <p>Освежающий и хрустящий</p>
+                    <p class="price">450 ₽/кг</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d" alt="Черный виноград">
+                    <h3>Черный виноград</h3>
+                    <p>Богатый антиоксидантами</p>
+                    <p class="price">550 ₽/кг</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <p>Мы предлагаем только лучшие сорта винограда, тщательно отобранные нашими экспертами. Наша продукция поставляется напрямую от проверенных производителей.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Ваше сообщение" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Корзина</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <p>Итого: <span>0 ₽</span></p>
+                <button class="checkout-button">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Виноградная Лавка. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
