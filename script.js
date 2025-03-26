@@ -201,4 +201,26 @@ style.textContent = `
         text-align: center;
     }
 `;
-document.head.appendChild(style); 
+document.head.appendChild(style);
+
+// Price list download functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadButton = document.querySelector('.cta-button');
+    
+    downloadButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = 'price.pdf';
+        link.download = 'Прайс-лист_Виноградная_Лавка.pdf';
+        
+        // Append to body, click and remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        // Show notification
+        showNotification('Прайс-лист успешно скачан!');
+    });
+}); 

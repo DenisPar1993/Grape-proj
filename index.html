@@ -9,19 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Виноградная Лавка</div>
-            <div class="nav-links">
-                <a href="#home">Главная</a>
-                <a href="#products">Продукты</a>
-                <a href="#about">О нас</a>
-                <a href="#contact">Контакты</a>
-            </div>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
-            </div>
-        </nav>
+        <div class="logo">Виноградная Лавка</div>
     </header>
 
     <main>
@@ -29,7 +17,7 @@
             <div class="hero-content">
                 <h1>Свежий виноград высшего качества</h1>
                 <p>Отборные сорта винограда со всего мира</p>
-                <a href="#products" class="cta-button">Смотреть каталог</a>
+                <a href="price.pdf" download class="cta-button">Скачать прайс</a>
             </div>
         </section>
 
@@ -37,19 +25,19 @@
             <h2>Наши сорта винограда</h2>
             <div class="products-grid">
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d" alt="Красный виноград">
+                    <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1945&q=80" alt="Красный виноград">
                     <h3>Красный виноград</h3>
                     <p>Сладкий и сочный сорт</p>
                     <p class="price">500 ₽/кг</p>
                 </div>
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d" alt="Зеленый виноград">
+                    <img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Зеленый виноград">
                     <h3>Зеленый виноград</h3>
                     <p>Освежающий и хрустящий</p>
                     <p class="price">450 ₽/кг</p>
                 </div>
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d" alt="Черный виноград">
+                    <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1911&q=80" alt="Черный виноград">
                     <h3>Черный виноград</h3>
                     <p>Богатый антиоксидантами</p>
                     <p class="price">550 ₽/кг</p>
@@ -64,29 +52,60 @@
             </div>
         </section>
 
+        <section id="benefits" class="benefits">
+            <h2>Наши преимущества</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Качество продукта</h3>
+                    <p>Мы тщательно отбираем каждый сорт винограда, проверяя его на свежесть, сладость и отсутствие дефектов.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставляем виноград в день заказа. Специальная упаковка сохраняет свежесть продукта при транспортировке.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Доступные цены</h3>
+                    <p>Прямые поставки от производителей позволяют нам предлагать качественный виноград по конкурентным ценам.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="contact">
-            <h2>Свяжитесь с нами</h2>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Ваше сообщение" required></textarea>
-                    <button type="submit">Отправить</button>
-                </form>
+            <h2>Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: <a href="mailto:info@vinogradnaya-lvaka.ru">info@vinogradnaya-lvaka.ru</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Адрес: г. Москва, ул. Ленина, 1</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="social-buttons">
+                        <a href="https://t.me/your_channel" class="social-button telegram">
+                            <i class="fab fa-telegram"></i>
+                            Telegram
+                        </a>
+                        <a href="https://www.avito.ru/your_profile" class="social-button avito">
+                            <i class="fas fa-store"></i>
+                            Авито
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-content">
-            <h2>Корзина</h2>
-            <div class="cart-items"></div>
-            <div class="cart-total">
-                <p>Итого: <span>0 ₽</span></p>
-                <button class="checkout-button">Оформить заказ</button>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <p>&copy; 2024 Виноградная Лавка. Все права защищены.</p>
