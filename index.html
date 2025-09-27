@@ -6,6 +6,7 @@
     <title>Виноградная Лавка - Свежий виноград</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -23,25 +24,52 @@
 
         <section id="products" class="products">
             <h2>Наши сорта винограда</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1945&q=80" alt="Красный виноград">
-                    <h3>Красный виноград</h3>
-                    <p>Сладкий и сочный сорт</p>
-                    <p class="price">500 ₽/кг</p>
+            <div class="swiper products-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1945&q=80" alt="Красный виноград">
+                            <h3>Красный виноград</h3>
+                            <p>Сладкий и сочный сорт</p>
+                            <p class="price">500 ₽/кг</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Зеленый виноград">
+                            <h3>Зеленый виноград</h3>
+                            <p>Освежающий и хрустящий</p>
+                            <p class="price">450 ₽/кг</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1911&q=80" alt="Черный виноград">
+                            <h3>Черный виноград</h3>
+                            <p>Богатый антиоксидантами</p>
+                            <p class="price">550 ₽/кг</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Белый виноград">
+                            <h3>Белый виноград</h3>
+                            <p>Нежный и ароматный</p>
+                            <p class="price">480 ₽/кг</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Розовый виноград">
+                            <h3>Розовый виноград</h3>
+                            <p>Сладкий с легкой кислинкой</p>
+                            <p class="price">520 ₽/кг</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Зеленый виноград">
-                    <h3>Зеленый виноград</h3>
-                    <p>Освежающий и хрустящий</p>
-                    <p class="price">450 ₽/кг</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1911&q=80" alt="Черный виноград">
-                    <h3>Черный виноград</h3>
-                    <p>Богатый антиоксидантами</p>
-                    <p class="price">550 ₽/кг</p>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
@@ -111,6 +139,7 @@
         <p>&copy; 2024 Виноградная Лавка. Все права защищены.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 

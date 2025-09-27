@@ -76,12 +76,61 @@ header {
     color: #2c3e50;
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+/* Swiper Styles */
+.products-swiper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.products-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.products-swiper .product-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Swiper Navigation Buttons */
+.products-swiper .swiper-button-next,
+.products-swiper .swiper-button-prev {
+    color: #e74c3c;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.products-swiper .swiper-button-next:hover,
+.products-swiper .swiper-button-prev:hover {
+    background: #e74c3c;
+    color: white;
+    transform: scale(1.1);
+}
+
+.products-swiper .swiper-button-next:after,
+.products-swiper .swiper-button-prev:after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Swiper Pagination */
+.products-swiper .swiper-pagination-bullet {
+    background: #e74c3c;
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+}
+
+.products-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #e74c3c;
 }
 
 .product-card {
@@ -307,8 +356,9 @@ footer {
         font-size: 2rem;
     }
     
-    .products-grid {
-        grid-template-columns: 1fr;
+    .products-swiper .swiper-button-next,
+    .products-swiper .swiper-button-prev {
+        display: none;
     }
     
     .contact-content {
